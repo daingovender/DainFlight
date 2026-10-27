@@ -65,6 +65,7 @@ fcs_status_t FCS_Core_Init(
     return status;
 }
 
+/* [LLR-FSM-003] Deterministic Step Function */
 fcs_status_t FCS_Core_Step(
     fcs_system_state_t*     const p_sys,
     const fcs_imu_raw_t*    const p_raw_imu,

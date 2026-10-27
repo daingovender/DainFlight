@@ -15,7 +15,7 @@ void Run_Sensor_Tests(void)
 
     /* Test 2: [LLR-SEN-001] Non-finite / NaN rejection */
     fcs_imu_raw_t raw_nan = {0};
-    raw_nan.gyro_x_dps = 0.0f / 0.0f; /* NaN */
+    raw_nan.gyro_x_dps = (float32_t)sqrt(-1.0); /* NaN */
     raw_nan.is_healthy = FCS_TRUE;
     fcs_imu_filtered_t filtered;
     status = FCS_Sensors_Process(&raw_nan, &state, &filtered);

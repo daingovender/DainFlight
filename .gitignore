@@ -21,6 +21,19 @@ compile_commands.json
 *.swo
 *~
 
+# Python, MCP servers, and workspace tools
+__pycache__/
+*.py[cod]
+.pytest_cache/
+standards/
+avionics_mcp_server/
+avionics_auditor/
+audit_code.py
+reports/
+.agents/
+AGENTS.md
+err.txt
+
 # Operating System Files
 .DS_Store
 Thumbs.db
