@@ -1,0 +1,26 @@
+# C Build Artifacts & Binaries
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.exe
+bin/
+build/
+
+# Compilation database
+compile_commands.json
+.cache/
+
+# IDE & Editor folders
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating System Files
+.DS_Store
+Thumbs.db
